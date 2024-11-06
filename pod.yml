@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: ajpod
+  namespace: ajapp
+spec:  
+  containers: 
+  - image: nginx:latest
+    name: silicon
+    ports: 
+    - containerPort: 80 
+  - image: linuxserver/firefox
+    name: fab
+    ports: 
+    - containerPort: 3000    
